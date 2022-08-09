@@ -6,7 +6,7 @@ This web api learning projects. With dot net v6.
 
 
 ## 🔗 Follow me here
-<p style="text-align:center">
+<div align="center">
     <a href="https://hasibul-hasan.netlify.app/"><img src="https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Portfolio"></a>
     <a href="https://www.linkedin.com/in/iam-hasibulhasan/"><img src="https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin"></a>
     <a href="https://github.com/iamhasibulhasan"><img src="https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
@@ -16,6 +16,6 @@ This web api learning projects. With dot net v6.
     <a href="mailto:mdhasibulhasan.dev@gmail.com"><img src="https://img.shields.io/badge/gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"></a>
     <a href="tel:+8801747979703"><img src="https://img.shields.io/badge/whatsapp-1BA93B?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Whatsapp"></a>
 
-</p>
+</div>
 
 
