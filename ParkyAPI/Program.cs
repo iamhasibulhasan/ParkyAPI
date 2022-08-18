@@ -38,7 +38,7 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("ParkyOpenAPISpecTrails", new Microsoft.OpenApi.Models.OpenApiInfo()
     {
         Title = "Parky API (Trails)",
-        Version = "v1",
+        Version = "v12",
         Description = "This a test API project.",
         Contact = new Microsoft.OpenApi.Models.OpenApiContact()
         {
