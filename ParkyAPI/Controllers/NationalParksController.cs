@@ -9,6 +9,7 @@ namespace ParkyAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [ApiExplorerSettings(GroupName = "ParkyOpenAPISpecNP")]
     public class NationalParksController : Controller
     {
         private INationalParkRepository _npRepo;

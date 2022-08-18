@@ -9,6 +9,7 @@ namespace ParkyAPI.Controllers
 {
     [Route("api/Trails")]
     [ApiController]
+    [ApiExplorerSettings(GroupName = "ParkyOpenAPISpecTrails")]
     public class TrailsController : Controller
     {
         private ITrailRepository _trailRepo;

@@ -23,16 +23,28 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("ParkyOpenAPISpec", new Microsoft.OpenApi.Models.OpenApiInfo()
+    options.SwaggerDoc("ParkyOpenAPISpecNP", new Microsoft.OpenApi.Models.OpenApiInfo()
     {
-        Title = "Parky API",
+        Title = "Parky API (National Park)",
         Version = "v1",
-        Description="This a test API project.",
+        Description="National Park API",
         Contact =new Microsoft.OpenApi.Models.OpenApiContact()
         {
             Email="mdhasibulhasan.dev@gmail.com",
             Name="Hasibul Hasan",
             Url=new Uri("https://hasibul-hasan.netlify.com")
+        }
+    });
+    options.SwaggerDoc("ParkyOpenAPISpecTrails", new Microsoft.OpenApi.Models.OpenApiInfo()
+    {
+        Title = "Parky API (Trails)",
+        Version = "v1",
+        Description = "This a test API project.",
+        Contact = new Microsoft.OpenApi.Models.OpenApiContact()
+        {
+            Email = "mdhasibulhasan.dev@gmail.com",
+            Name = "Hasibul Hasan",
+            Url = new Uri("https://hasibul-hasan.netlify.com")
         }
     });
 });
@@ -45,7 +57,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/swagger/ParkyOpenAPISpec/swagger.json", "Parky API");
+        options.SwaggerEndpoint("/swagger/ParkyOpenAPISpecNP/swagger.json", "National Park");
+        options.SwaggerEndpoint("/swagger/ParkyOpenAPISpecTrails/swagger.json", "Trails");
         //options.RoutePrefix = "";
     });
 }
