@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ParkyAPI.Models;
@@ -9,8 +10,9 @@ namespace ParkyAPI.Controllers
 {
     [Route("api/Trails")]
     [ApiController]
-    [ApiExplorerSettings(GroupName = "ParkyOpenAPISpecTrails")]
-    public class TrailsController : Controller
+    [Authorize]
+    //[ApiExplorerSettings(GroupName = "ParkyOpenAPISpecTrails")]
+    public class TrailsController : ControllerBase
     {
         private ITrailRepository _trailRepo;
         private readonly IMapper _mapper;
